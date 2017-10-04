@@ -1,0 +1,7 @@
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\bin\Debug\WebServiceProject.dll.config
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\bin\Debug\WebServiceProject.dll
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\bin\Debug\WebServiceProject.pdb
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\obj\Debug\WebServiceProject.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\obj\Debug\WebServiceProject.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\obj\Debug\WebServiceProject.dll
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProject\obj\Debug\WebServiceProject.pdb
