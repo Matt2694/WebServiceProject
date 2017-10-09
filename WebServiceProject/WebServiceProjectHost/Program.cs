@@ -4,12 +4,14 @@ using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace WebServiceProjectHost
 {
     class Program
     {
+        private static bool running = true;
         static void Main(string[] args)
         {
             ServiceHost webServiceProjectHost = null;
@@ -34,6 +36,11 @@ namespace WebServiceProjectHost
                 //Open
                 webServiceProjectHost.Open();
                 Console.WriteLine("Service is live now at: {0}", httpBaseAddress);
+
+                //Parse Thread
+                Thread parsingThread = new Thread(new ThreadStart(Parser));
+                parsingThread.Start();
+
                 Console.ReadKey();
             }
 
@@ -41,6 +48,14 @@ namespace WebServiceProjectHost
             {
                 webServiceProjectHost = null;
                 Console.WriteLine("There is an issue with StudentService" + ex.Message);
+            }
+        }
+
+        private static void Parser()
+        {
+            while (running)
+            {
+
             }
         }
     }

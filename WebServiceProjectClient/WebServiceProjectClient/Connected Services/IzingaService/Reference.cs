@@ -8,14 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebServiceProjectClient.WebServiceReference {
+namespace WebServiceProjectClient.IzingaService {
     using System.Runtime.Serialization;
     using System;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/WebServiceProject")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/WebServiceProjectTest")]
     [System.SerializableAttribute()]
     public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -75,46 +75,46 @@ namespace WebServiceProjectClient.WebServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WebServiceReference.IService")]
-    public interface IService {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IzingaService.IIzingaService")]
+    public interface IIzingaService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetData", ReplyAction="http://tempuri.org/IIzingaService/GetDataResponse")]
         string GetData(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetData", ReplyAction="http://tempuri.org/IIzingaService/GetDataResponse")]
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService/GetDataUsingDataContractResponse")]
-        WebServiceProjectClient.WebServiceReference.CompositeType GetDataUsingDataContract(WebServiceProjectClient.WebServiceReference.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IIzingaService/GetDataUsingDataContractResponse")]
+        WebServiceProjectClient.IzingaService.CompositeType GetDataUsingDataContract(WebServiceProjectClient.IzingaService.CompositeType composite);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<WebServiceProjectClient.WebServiceReference.CompositeType> GetDataUsingDataContractAsync(WebServiceProjectClient.WebServiceReference.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IIzingaService/GetDataUsingDataContractResponse")]
+        System.Threading.Tasks.Task<WebServiceProjectClient.IzingaService.CompositeType> GetDataUsingDataContractAsync(WebServiceProjectClient.IzingaService.CompositeType composite);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceChannel : WebServiceProjectClient.WebServiceReference.IService, System.ServiceModel.IClientChannel {
+    public interface IIzingaServiceChannel : WebServiceProjectClient.IzingaService.IIzingaService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceClient : System.ServiceModel.ClientBase<WebServiceProjectClient.WebServiceReference.IService>, WebServiceProjectClient.WebServiceReference.IService {
+    public partial class IzingaServiceClient : System.ServiceModel.ClientBase<WebServiceProjectClient.IzingaService.IIzingaService>, WebServiceProjectClient.IzingaService.IIzingaService {
         
-        public ServiceClient() {
+        public IzingaServiceClient() {
         }
         
-        public ServiceClient(string endpointConfigurationName) : 
+        public IzingaServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public IzingaServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public IzingaServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public IzingaServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
@@ -126,11 +126,11 @@ namespace WebServiceProjectClient.WebServiceReference {
             return base.Channel.GetDataAsync(value);
         }
         
-        public WebServiceProjectClient.WebServiceReference.CompositeType GetDataUsingDataContract(WebServiceProjectClient.WebServiceReference.CompositeType composite) {
+        public WebServiceProjectClient.IzingaService.CompositeType GetDataUsingDataContract(WebServiceProjectClient.IzingaService.CompositeType composite) {
             return base.Channel.GetDataUsingDataContract(composite);
         }
         
-        public System.Threading.Tasks.Task<WebServiceProjectClient.WebServiceReference.CompositeType> GetDataUsingDataContractAsync(WebServiceProjectClient.WebServiceReference.CompositeType composite) {
+        public System.Threading.Tasks.Task<WebServiceProjectClient.IzingaService.CompositeType> GetDataUsingDataContractAsync(WebServiceProjectClient.IzingaService.CompositeType composite) {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }
     }

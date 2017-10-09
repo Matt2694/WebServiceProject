@@ -50,12 +50,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebServiceProjectTest\WebServiceProjectTest.csproj">
+    <ProjectReference Include="..\WebServiceProjectTest\WebServiceProject.csproj">
       <Project>{0790be80-4ed7-4a4f-bb23-a0b0ca48ed57}</Project>
-      <Name>WebServiceProjectTest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebServiceProject\WebServiceProject.csproj">
-      <Project>{927db1ac-46a4-48d9-bba7-4d2fd6edcce8}</Project>
       <Name>WebServiceProject</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,9 +1,6 @@
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\bin\Debug\WebServiceProjectHost.exe.config
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\bin\Debug\WebServiceProjectHost.exe
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\bin\Debug\WebServiceProjectHost.pdb
-C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\bin\Debug\WebServiceProject.dll
-C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\bin\Debug\WebServiceProject.pdb
-C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\bin\Debug\WebServiceProject.dll.config
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\obj\Debug\WebServiceProjectHost.csprojResolveAssemblyReference.cache
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\obj\Debug\WebServiceProjectHost.csproj.CoreCompileInputs.cache
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectHost\obj\Debug\WebServiceProjectHost.exe
