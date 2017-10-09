@@ -12,32 +12,77 @@ namespace WebServiceProjectTest
     public interface IIzingaService
     {
         [OperationContract]
-        string GetData(int value);
-
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        string GetLogs(string parameter1, string parameter2);
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     // You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "WebServiceProject.ContractType".
     [DataContract]
-    public class CompositeType
+    public class Log
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        DateTime tid;
+        int id;
+        string alarm;
+        string navn;
+        string afdeling;
+        string bolig;
+        DateTime afmeldt;
+        string personale;
 
         [DataMember]
-        public bool BoolValue
+        public DateTime TidValue
         {
-            get { return boolValue; }
-            set { boolValue = value; }
+            get { return tid; }
+            set { tid = value; }
         }
 
         [DataMember]
-        public string StringValue
+        public int IDValue
         {
-            get { return stringValue; }
-            set { stringValue = value; }
+            get { return id; }
+            set { id = value; }
+        }
+
+        [DataMember]
+        public string AlarmValue
+        {
+            get { return alarm; }
+            set { alarm = value; }
+        }
+
+        [DataMember]
+        public string NavnValue
+        {
+            get { return navn; }
+            set { navn = value; }
+        }
+
+        [DataMember]
+        public string AfdelingValue
+        {
+            get { return afdeling; }
+            set { afdeling = value; }
+        }
+
+        [DataMember]
+        public string BoligValue
+        {
+            get { return bolig; }
+            set { bolig = value; }
+        }
+
+        [DataMember]
+        public DateTime AfmeldtValue
+        {
+            get { return afmeldt; }
+            set { afmeldt = value; }
+        }
+
+        [DataMember]
+        public string PersonaleValue
+        {
+            get { return personale; }
+            set { personale = value; }
         }
     }
 }

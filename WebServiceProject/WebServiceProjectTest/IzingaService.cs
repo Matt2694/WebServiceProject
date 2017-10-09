@@ -10,22 +10,9 @@ namespace WebServiceProjectTest
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class IzingaService : IIzingaService
     {
-        public string GetData(int value)
+        public List<Log> GetLogs(string parameter1 = "", string parameter2 = "")
         {
-            return string.Format("You entered: {0}", value);
-        }
-
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            
         }
     }
 }
