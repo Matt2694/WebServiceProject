@@ -47,7 +47,7 @@ namespace WebServiceProjectHost
             catch (Exception ex)
             {
                 webServiceProjectHost = null;
-                Console.WriteLine("There is an issue with StudentService" + ex.Message);
+                Console.WriteLine("There is an issue with IzingaService" + ex.Message);
             }
         }
 
