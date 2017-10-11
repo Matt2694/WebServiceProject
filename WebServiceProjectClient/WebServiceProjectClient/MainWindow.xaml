@@ -8,9 +8,9 @@
         Title="MainWindow" Height="350" Width="500">
     <Grid>
         <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" Width="240"/>
-        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="280,250,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Margin="390,250,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="280,50,0,0" VerticalAlignment="Top" Width="75" IsReadOnly="True">
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="280,250,0,0" VerticalAlignment="Top" Width="75" Click="SearchButton_Click"/>
+        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Margin="390,250,0,0" VerticalAlignment="Top" Width="75" Click="UpdateButton_Click"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="280,50,0,0" VerticalAlignment="Top" Width="75">
             <ComboBoxItem>Tid</ComboBoxItem>
             <ComboBoxItem>ID</ComboBoxItem>
             <ComboBoxItem>Alarm</ComboBoxItem>
@@ -21,7 +21,7 @@
             <ComboBoxItem>Personale</ComboBoxItem>
         </ComboBox>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="390,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="15"/>
-        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Margin="280,150,0,0" VerticalAlignment="Top" Width="75" IsReadOnly="True">
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Margin="280,150,0,0" VerticalAlignment="Top" Width="75">
             <ComboBoxItem>Tid</ComboBoxItem>
             <ComboBoxItem>ID</ComboBoxItem>
             <ComboBoxItem>Alarm</ComboBoxItem>
