@@ -12,7 +12,7 @@ namespace WebServiceProjectTest
     public interface IIzingaService
     {
         [OperationContract]
-        string GetLogs(string parameter1, string parameter2);
+        List<Log> GetLogs(string parameter1, string parameter2);
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
