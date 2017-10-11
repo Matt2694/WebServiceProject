@@ -41,7 +41,7 @@ namespace WebServiceProjectHost
                 Thread parsingThread = new Thread(new ThreadStart(Parser));
                 parsingThread.Start();
 
-                Console.ReadKey();
+                //Console.ReadKey();
             }
 
             catch (Exception ex)
