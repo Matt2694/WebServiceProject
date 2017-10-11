@@ -1,0 +1,15 @@
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\bin\Debug\WebServiceProjectClient.exe.config
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\bin\Debug\WebServiceProjectClient.exe
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\bin\Debug\WebServiceProjectClient.pdb
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\MainWindow.g.cs
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\App.g.cs
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient_MarkupCompile.cache
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient_MarkupCompile.lref
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\MainWindow.baml
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.g.resources
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.Properties.Resources.resources
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.exe
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProjectClient\WebServiceProjectClient\obj\Debug\WebServiceProjectClient.pdb

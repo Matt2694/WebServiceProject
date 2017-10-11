@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebServiceProjectClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="500">
     <Grid>
-        
+        <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" Width="240"/>
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="280,250,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Margin="390,250,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="280,50,0,0" VerticalAlignment="Top" Width="75" IsReadOnly="True">
+            <ComboBoxItem IsSelected="True">Tid</ComboBoxItem>
+            <ComboBoxItem>ID</ComboBoxItem>
+            <ComboBoxItem>Alarm</ComboBoxItem>
+            <ComboBoxItem>Navn</ComboBoxItem>
+            <ComboBoxItem>Afdeling</ComboBoxItem>
+            <ComboBoxItem>Bolig</ComboBoxItem>
+            <ComboBoxItem>Afmeldt</ComboBoxItem>
+            <ComboBoxItem>Personale</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="390,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="15"/>
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Margin="280,150,0,0" VerticalAlignment="Top" Width="75" IsReadOnly="True">
+            <ComboBoxItem>Tid</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">ID</ComboBoxItem>
+            <ComboBoxItem>Alarm</ComboBoxItem>
+            <ComboBoxItem>Navn</ComboBoxItem>
+            <ComboBoxItem>Afdeling</ComboBoxItem>
+            <ComboBoxItem>Bolig</ComboBoxItem>
+            <ComboBoxItem>Afmeldt</ComboBoxItem>
+            <ComboBoxItem>Personale</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="390,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="15"/>
+
     </Grid>
 </Window>
