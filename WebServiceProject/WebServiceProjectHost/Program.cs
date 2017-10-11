@@ -21,11 +21,11 @@ namespace WebServiceProjectHost
                 Uri httpBaseAddress = new Uri("http://localhost:8733/Design_Time_Addresses/WebServiceProject/IzingaService/");
 
                 //Instantiate ServiceHost
-                webServiceProjectHost = new ServiceHost(typeof(WebServiceProjectTest.IzingaService),
+                webServiceProjectHost = new ServiceHost(typeof(WebServiceProject.IzingaService),
                     httpBaseAddress);
 
                 //Add Endpoint to Host
-                webServiceProjectHost.AddServiceEndpoint(typeof(WebServiceProjectTest.IIzingaService),
+                webServiceProjectHost.AddServiceEndpoint(typeof(WebServiceProject.IIzingaService),
                                                         new WSHttpBinding(), "");
 
                 //Metadata Exchange

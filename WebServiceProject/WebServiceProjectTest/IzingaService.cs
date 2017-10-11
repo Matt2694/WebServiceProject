@@ -12,7 +12,7 @@ namespace WebServiceProject
     {
         public List<Log> GetLogs(string parameter1 = "", string parameter2 = "")
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

@@ -4,3 +4,4 @@ C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServicePro
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectTest\obj\Debug\WebServiceProject.csproj.CoreCompileInputs.cache
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectTest\obj\Debug\WebServiceProjectTest.dll
 C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectTest\obj\Debug\WebServiceProjectTest.pdb
+C:\Users\Matt\Documents\GitHub\WebServiceProject\WebServiceProject\WebServiceProjectTest\obj\Debug\WebServiceProject.csprojResolveAssemblyReference.cache
