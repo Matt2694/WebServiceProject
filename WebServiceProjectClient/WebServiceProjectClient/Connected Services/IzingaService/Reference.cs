@@ -15,7 +15,7 @@ namespace WebServiceProjectClient.IzingaService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Log", Namespace="http://schemas.datacontract.org/2004/07/WebServiceProject")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Log", Namespace="http://schemas.datacontract.org/2004/07/WebServiceProjectTest")]
     [System.SerializableAttribute()]
     public partial class Log : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -39,9 +39,6 @@ namespace WebServiceProjectClient.IzingaService {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NavnValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PersonaleValueField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime TidValueField;
@@ -135,19 +132,6 @@ namespace WebServiceProjectClient.IzingaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string PersonaleValue {
-            get {
-                return this.PersonaleValueField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PersonaleValueField, value) != true)) {
-                    this.PersonaleValueField = value;
-                    this.RaisePropertyChanged("PersonaleValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.DateTime TidValue {
             get {
                 return this.TidValueField;
@@ -171,14 +155,33 @@ namespace WebServiceProjectClient.IzingaService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IzingaService.IIzingaService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IzingaService.IIzingaService", CallbackContract=typeof(WebServiceProjectClient.IzingaService.IIzingaServiceCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IIzingaService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetLogs", ReplyAction="http://tempuri.org/IIzingaService/GetLogsResponse")]
-        WebServiceProjectClient.IzingaService.Log[] GetLogs(string parameter1, string parameter2);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Subscribe", ReplyAction="http://tempuri.org/IIzingaService/SubscribeResponse")]
+        void Subscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetLogs", ReplyAction="http://tempuri.org/IIzingaService/GetLogsResponse")]
-        System.Threading.Tasks.Task<WebServiceProjectClient.IzingaService.Log[]> GetLogsAsync(string parameter1, string parameter2);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Subscribe", ReplyAction="http://tempuri.org/IIzingaService/SubscribeResponse")]
+        System.Threading.Tasks.Task SubscribeAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Unsubscribe", ReplyAction="http://tempuri.org/IIzingaService/UnsubscribeResponse")]
+        void Unsubscribe();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Unsubscribe", ReplyAction="http://tempuri.org/IIzingaService/UnsubscribeResponse")]
+        System.Threading.Tasks.Task UnsubscribeAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/PublishResult", ReplyAction="http://tempuri.org/IIzingaService/PublishResultResponse")]
+        void PublishResult();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/PublishResult", ReplyAction="http://tempuri.org/IIzingaService/PublishResultResponse")]
+        System.Threading.Tasks.Task PublishResultAsync();
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IIzingaServiceCallback {
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IIzingaService/CallbackPublishResult")]
+        void CallbackPublishResult(WebServiceProjectClient.IzingaService.Log[] list);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -187,33 +190,50 @@ namespace WebServiceProjectClient.IzingaService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class IzingaServiceClient : System.ServiceModel.ClientBase<WebServiceProjectClient.IzingaService.IIzingaService>, WebServiceProjectClient.IzingaService.IIzingaService {
+    public partial class IzingaServiceClient : System.ServiceModel.DuplexClientBase<WebServiceProjectClient.IzingaService.IIzingaService>, WebServiceProjectClient.IzingaService.IIzingaService {
         
-        public IzingaServiceClient() {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance) : 
+                base(callbackInstance) {
         }
         
-        public IzingaServiceClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+                base(callbackInstance, endpointConfigurationName) {
         }
         
-        public IzingaServiceClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public IzingaServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public IzingaServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, binding, remoteAddress) {
         }
         
-        public WebServiceProjectClient.IzingaService.Log[] GetLogs(string parameter1, string parameter2) {
-            return base.Channel.GetLogs(parameter1, parameter2);
+        public void Subscribe() {
+            base.Channel.Subscribe();
         }
         
-        public System.Threading.Tasks.Task<WebServiceProjectClient.IzingaService.Log[]> GetLogsAsync(string parameter1, string parameter2) {
-            return base.Channel.GetLogsAsync(parameter1, parameter2);
+        public System.Threading.Tasks.Task SubscribeAsync() {
+            return base.Channel.SubscribeAsync();
+        }
+        
+        public void Unsubscribe() {
+            base.Channel.Unsubscribe();
+        }
+        
+        public System.Threading.Tasks.Task UnsubscribeAsync() {
+            return base.Channel.UnsubscribeAsync();
+        }
+        
+        public void PublishResult() {
+            base.Channel.PublishResult();
+        }
+        
+        public System.Threading.Tasks.Task PublishResultAsync() {
+            return base.Channel.PublishResultAsync();
         }
     }
 }

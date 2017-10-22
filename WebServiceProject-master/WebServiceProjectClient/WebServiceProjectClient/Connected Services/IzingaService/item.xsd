@@ -14,7 +14,6 @@
       <xs:element minOccurs="0" name="BoligValue" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="IDValue" type="xs:int" />
       <xs:element minOccurs="0" name="NavnValue" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="PersonaleValue" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TidValue" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>

@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WebServiceProject/IzingaService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WebServiceProject" />
-  <xs:element name="GetLogs">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WebServiceProject/IzingaService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WebServiceProjectTest" />
+  <xs:element name="Subscribe">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="parameter1" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="parameter2" nillable="true" type="xs:string" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetLogsResponse">
+  <xs:element name="SubscribeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Unsubscribe">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsubscribeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublishResult">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublishResultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallbackPublishResult">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebServiceProject" minOccurs="0" name="GetLogsResult" nillable="true" type="q1:ArrayOfLog" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebServiceProjectTest" minOccurs="0" name="list" nillable="true" type="q1:ArrayOfLog" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -23,9 +23,7 @@
   </xs:element>
   <xs:element name="PublishResult">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebServiceProjectTest" minOccurs="0" name="result" nillable="true" type="q1:ArrayOfLog" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="PublishResultResponse">
@@ -36,7 +34,7 @@
   <xs:element name="CallbackPublishResult">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WebServiceProjectTest" minOccurs="0" name="list" nillable="true" type="q2:ArrayOfLog" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebServiceProjectTest" minOccurs="0" name="list" nillable="true" type="q1:ArrayOfLog" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

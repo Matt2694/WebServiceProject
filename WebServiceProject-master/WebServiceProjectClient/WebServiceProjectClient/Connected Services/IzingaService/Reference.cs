@@ -41,9 +41,6 @@ namespace WebServiceProjectClient.IzingaService {
         private string NavnValueField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PersonaleValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime TidValueField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -135,19 +132,6 @@ namespace WebServiceProjectClient.IzingaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string PersonaleValue {
-            get {
-                return this.PersonaleValueField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PersonaleValueField, value) != true)) {
-                    this.PersonaleValueField = value;
-                    this.RaisePropertyChanged("PersonaleValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.DateTime TidValue {
             get {
                 return this.TidValueField;
@@ -187,10 +171,10 @@ namespace WebServiceProjectClient.IzingaService {
         System.Threading.Tasks.Task UnsubscribeAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/PublishResult", ReplyAction="http://tempuri.org/IIzingaService/PublishResultResponse")]
-        void PublishResult(WebServiceProjectClient.IzingaService.Log[] result);
+        void PublishResult();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/PublishResult", ReplyAction="http://tempuri.org/IIzingaService/PublishResultResponse")]
-        System.Threading.Tasks.Task PublishResultAsync(WebServiceProjectClient.IzingaService.Log[] result);
+        System.Threading.Tasks.Task PublishResultAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -244,12 +228,12 @@ namespace WebServiceProjectClient.IzingaService {
             return base.Channel.UnsubscribeAsync();
         }
         
-        public void PublishResult(WebServiceProjectClient.IzingaService.Log[] result) {
-            base.Channel.PublishResult(result);
+        public void PublishResult() {
+            base.Channel.PublishResult();
         }
         
-        public System.Threading.Tasks.Task PublishResultAsync(WebServiceProjectClient.IzingaService.Log[] result) {
-            return base.Channel.PublishResultAsync(result);
+        public System.Threading.Tasks.Task PublishResultAsync() {
+            return base.Channel.PublishResultAsync();
         }
     }
 }
