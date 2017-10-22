@@ -15,18 +15,36 @@ namespace WebServiceProjectClient.IzingaService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/WebServiceProjectTest")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Log", Namespace="http://schemas.datacontract.org/2004/07/WebServiceProjectTest")]
     [System.SerializableAttribute()]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Log : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BoolValueField;
+        private string AfdelingValueField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
+        private System.DateTime AfmeldtValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AlarmValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BoligValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NavnValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PersonaleValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime TidValueField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -39,27 +57,105 @@ namespace WebServiceProjectClient.IzingaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue {
+        public string AfdelingValue {
             get {
-                return this.BoolValueField;
+                return this.AfdelingValueField;
             }
             set {
-                if ((this.BoolValueField.Equals(value) != true)) {
-                    this.BoolValueField = value;
-                    this.RaisePropertyChanged("BoolValue");
+                if ((object.ReferenceEquals(this.AfdelingValueField, value) != true)) {
+                    this.AfdelingValueField = value;
+                    this.RaisePropertyChanged("AfdelingValue");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
+        public System.DateTime AfmeldtValue {
             get {
-                return this.StringValueField;
+                return this.AfmeldtValueField;
             }
             set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
+                if ((this.AfmeldtValueField.Equals(value) != true)) {
+                    this.AfmeldtValueField = value;
+                    this.RaisePropertyChanged("AfmeldtValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AlarmValue {
+            get {
+                return this.AlarmValueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AlarmValueField, value) != true)) {
+                    this.AlarmValueField = value;
+                    this.RaisePropertyChanged("AlarmValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BoligValue {
+            get {
+                return this.BoligValueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BoligValueField, value) != true)) {
+                    this.BoligValueField = value;
+                    this.RaisePropertyChanged("BoligValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IDValue {
+            get {
+                return this.IDValueField;
+            }
+            set {
+                if ((this.IDValueField.Equals(value) != true)) {
+                    this.IDValueField = value;
+                    this.RaisePropertyChanged("IDValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NavnValue {
+            get {
+                return this.NavnValueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NavnValueField, value) != true)) {
+                    this.NavnValueField = value;
+                    this.RaisePropertyChanged("NavnValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PersonaleValue {
+            get {
+                return this.PersonaleValueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PersonaleValueField, value) != true)) {
+                    this.PersonaleValueField = value;
+                    this.RaisePropertyChanged("PersonaleValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime TidValue {
+            get {
+                return this.TidValueField;
+            }
+            set {
+                if ((this.TidValueField.Equals(value) != true)) {
+                    this.TidValueField = value;
+                    this.RaisePropertyChanged("TidValue");
                 }
             }
         }
@@ -75,20 +171,33 @@ namespace WebServiceProjectClient.IzingaService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IzingaService.IIzingaService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IzingaService.IIzingaService", CallbackContract=typeof(WebServiceProjectClient.IzingaService.IIzingaServiceCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IIzingaService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetData", ReplyAction="http://tempuri.org/IIzingaService/GetDataResponse")]
-        string GetData(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Subscribe", ReplyAction="http://tempuri.org/IIzingaService/SubscribeResponse")]
+        void Subscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetData", ReplyAction="http://tempuri.org/IIzingaService/GetDataResponse")]
-        System.Threading.Tasks.Task<string> GetDataAsync(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Subscribe", ReplyAction="http://tempuri.org/IIzingaService/SubscribeResponse")]
+        System.Threading.Tasks.Task SubscribeAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IIzingaService/GetDataUsingDataContractResponse")]
-        WebServiceProjectClient.IzingaService.CompositeType GetDataUsingDataContract(WebServiceProjectClient.IzingaService.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Unsubscribe", ReplyAction="http://tempuri.org/IIzingaService/UnsubscribeResponse")]
+        void Unsubscribe();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IIzingaService/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<WebServiceProjectClient.IzingaService.CompositeType> GetDataUsingDataContractAsync(WebServiceProjectClient.IzingaService.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/Unsubscribe", ReplyAction="http://tempuri.org/IIzingaService/UnsubscribeResponse")]
+        System.Threading.Tasks.Task UnsubscribeAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/PublishResult", ReplyAction="http://tempuri.org/IIzingaService/PublishResultResponse")]
+        void PublishResult(WebServiceProjectClient.IzingaService.Log[] result);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IIzingaService/PublishResult", ReplyAction="http://tempuri.org/IIzingaService/PublishResultResponse")]
+        System.Threading.Tasks.Task PublishResultAsync(WebServiceProjectClient.IzingaService.Log[] result);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IIzingaServiceCallback {
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IIzingaService/CallbackPublishResult")]
+        void CallbackPublishResult(WebServiceProjectClient.IzingaService.Log[] list);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,41 +206,50 @@ namespace WebServiceProjectClient.IzingaService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class IzingaServiceClient : System.ServiceModel.ClientBase<WebServiceProjectClient.IzingaService.IIzingaService>, WebServiceProjectClient.IzingaService.IIzingaService {
+    public partial class IzingaServiceClient : System.ServiceModel.DuplexClientBase<WebServiceProjectClient.IzingaService.IIzingaService>, WebServiceProjectClient.IzingaService.IIzingaService {
         
-        public IzingaServiceClient() {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance) : 
+                base(callbackInstance) {
         }
         
-        public IzingaServiceClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+                base(callbackInstance, endpointConfigurationName) {
         }
         
-        public IzingaServiceClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public IzingaServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public IzingaServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
+        public IzingaServiceClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, binding, remoteAddress) {
         }
         
-        public string GetData(int value) {
-            return base.Channel.GetData(value);
+        public void Subscribe() {
+            base.Channel.Subscribe();
         }
         
-        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
-            return base.Channel.GetDataAsync(value);
+        public System.Threading.Tasks.Task SubscribeAsync() {
+            return base.Channel.SubscribeAsync();
         }
         
-        public WebServiceProjectClient.IzingaService.CompositeType GetDataUsingDataContract(WebServiceProjectClient.IzingaService.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContract(composite);
+        public void Unsubscribe() {
+            base.Channel.Unsubscribe();
         }
         
-        public System.Threading.Tasks.Task<WebServiceProjectClient.IzingaService.CompositeType> GetDataUsingDataContractAsync(WebServiceProjectClient.IzingaService.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContractAsync(composite);
+        public System.Threading.Tasks.Task UnsubscribeAsync() {
+            return base.Channel.UnsubscribeAsync();
+        }
+        
+        public void PublishResult(WebServiceProjectClient.IzingaService.Log[] result) {
+            base.Channel.PublishResult(result);
+        }
+        
+        public System.Threading.Tasks.Task PublishResultAsync(WebServiceProjectClient.IzingaService.Log[] result) {
+            return base.Channel.PublishResultAsync(result);
         }
     }
 }
