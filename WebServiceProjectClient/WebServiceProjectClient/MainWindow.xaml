@@ -18,7 +18,6 @@
             <ComboBoxItem>Afdeling</ComboBoxItem>
             <ComboBoxItem>Bolig</ComboBoxItem>
             <ComboBoxItem>Afmeldt</ComboBoxItem>
-            <ComboBoxItem>Personale</ComboBoxItem>
         </ComboBox>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="390,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="15"/>
         <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Margin="280,150,0,0" VerticalAlignment="Top" Width="75">
@@ -29,7 +28,6 @@
             <ComboBoxItem>Afdeling</ComboBoxItem>
             <ComboBoxItem>Bolig</ComboBoxItem>
             <ComboBoxItem>Afmeldt</ComboBoxItem>
-            <ComboBoxItem>Personale</ComboBoxItem>
         </ComboBox>
         <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="390,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="15"/>
 

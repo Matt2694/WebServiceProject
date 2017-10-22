@@ -44,8 +44,9 @@ namespace WebServiceProjectTest
                         }
                     }
 
-                    catch (Exception)
+                    catch (Exception e)
                     {
+                        Console.WriteLine(e.Message);
                     }
                 }
                 Thread.Sleep(5000);
