@@ -43,6 +43,7 @@ namespace WebServiceProjectClient
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
+            ListBox1.Items.Clear();
             List<IzingaService.Log> searchedLogs = _logs.Get(ComboBox1.Text, TextBox1.Text, ComboBox2.Text, TextBox2.Text);
             foreach (IzingaService.Log log in searchedLogs)
             {
