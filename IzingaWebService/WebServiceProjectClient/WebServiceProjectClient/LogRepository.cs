@@ -8,7 +8,7 @@ namespace WebServiceProjectClient
 {
     class LogRepository
     {
-        List<IzingaService.Log> _logRepository = new List<IzingaService.Log>();
+        private List<IzingaService.Log> _logRepository = new List<IzingaService.Log>();
         private static LogRepository _instance = new LogRepository();
         public static LogRepository Instance { get { return _instance; } }
 
